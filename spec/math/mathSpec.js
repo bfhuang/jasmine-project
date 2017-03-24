@@ -1,10 +1,16 @@
 describe("math", function () {
 
-    var add = require('../../lib/math/math');
+    var math = require('../../lib/math/math');
 
     it("should return the sum of two operands", function () {
-        var sum = add(1, 2);
-
+        var sum = math.add(1, 2);
         expect(sum).toEqual(3);
-    })
+    });
+
+    it("should return the substraction of two operands", function(){
+       var substraction = math.minus(3,2);
+
+       expect(substraction).toEqual(1);
+    });
+
 })
